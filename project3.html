@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project3</title>
+    <style>
+        #parent{
+            height: 100px;
+            /* width: 1500px; */
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+        }
+       
+        a{
+            color: white;
+            font-size: xx-large;
+        } 
+        #center_space{
+            /* background-color: red; */
+            width: 750px;
+            display: flex;
+            justify-content:space-between;
+        }
+        #button_col{
+            color: black;
+        }  
+
+        
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div>
+            <a>Home</a>
+        </div>
+        <div id="center_space">
+           <a>Content</a>
+           <a>About</a>
+           <a>Contact us</a>
+        </div>
+        
+        <div>
+            <button style="width: 100px; height: 50px; cursor: pointer;"><a id="button_col">login</a></button>
+        </div>
+    </div>
+</body>
+</html>
