@@ -30,8 +30,10 @@ body{
  
 
 h3{
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
+  display: grid;
+  place-items: center;
   color: white;
 }
 #b1{
@@ -52,6 +54,9 @@ h3{
   background-color: black;
   /* position: relative;
   left: 70px; */
+  display: flex;
+  align-items: center; 
+ 
 }
 #p_name{
   color: black;
@@ -63,25 +68,26 @@ h3{
   position: relative;
   color: lightslategray;
   /* left: 100px; */
-  bottom: 15px; 
+  bottom: 25px; 
 }
 #p_describe{
   border: 1px dashed lightgrey;
-  height: 50px;
+  height: 100px;
   width: 220px; 
   /* text-align: center; */
   display: grid;
   place-items: center;
+  text-align: center;
   position: relative;
-  bottom: 10px;
+  bottom: 15px;
   /* left: 65px;  */
 
 }
 #b2{
   background-color: black;
   color: white;
-  height: 45px;
-  width: 120px;
+  height: 70px;
+  width: 110px;
   border-radius: 22px;
   position: relative;
   /* left: 105px; */
@@ -103,7 +109,7 @@ h3{
 
     <div class="profile"id="p2">
       <a id="b1" style="background-color: red;">OFFLINE</a>
-      <div class="pp"> </div>
+      <div class="pp"><h3>N</h3></div>
       <h2 id="p_name">Neha</h2>
       <p id="p_bio">UI Designer</p>
       <h5 id="p_describe">Designs clean and user-friendly<br>interfaces</h5>
@@ -113,7 +119,7 @@ h3{
 <div id="parent_1">
   <div class="profile" id="p3">
       <a id="b1">ONLINE</a>
-      <div class="pp"></div>
+      <div class="pp"><h3>A</h3></div>
       <h2 id="p_name">Aman</h2>
       <p id="p_bio">Backend Developer</p>
       <h5 id="p_describe">Works with server logic and<br>databases</h5>
