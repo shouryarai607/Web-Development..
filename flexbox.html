@@ -11,7 +11,7 @@
             width: 1500px;
             display: flex;
             /* justify-content: baseline; */
-             justify-content: center; 
+             /* justify-content: center;  */
             /* justify-content: end; */
             /* justify-content: space-around; */
             /* justify-content: space-between; */
@@ -19,6 +19,9 @@
             /* justify-content: baseline; */
             /* align-items: center; */
             /* align-items: end; */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            flex-direction: column-reverse;
 
 
         }
@@ -42,16 +45,21 @@
             height: 200px;
             width: 200px;
         }
+        a{
+            height: 15px;
+            width: 20px;
+            font-size: x-large;
+        }
 
 
     </style>
  </head>
  <body>
     <div id="parent">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div><a >1</a></div>
+        <div><a >2</a></div>
+        <div><a >3</a></div>
+        <div><a >4</a></div>
     </div>
     
  </body>

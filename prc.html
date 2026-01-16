@@ -1,139 +1,96 @@
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-      #profile{
-        height: 400px;
-        width: 250px;
-        /* border: 1px solid; */
-        border-radius: 15px;
-        transition: 3s;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        /* display: flex; */
-         margin: 0px auto;
-       
-        
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+#parent{
+  display: flex;
+  justify-content: space-evenly;
 
-          #third_profile{
-        height: 400px;
-        width: 250px;
-        /* border: 1px solid; */
-        border-radius: 15px;
-        transition: 3s;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-         margin: 0px auto;
-         
-    }
-      #logo{
-        border-radius: 5px;
-        position: relative;
-        
-        left: 14px;
-        
-      }
-       #n_logo{
-      
-        height: 225;
-        width: 225;
-        color: white;
-        background-color: black;
-        border-radius: 50%;
-        
-         /* border-radius: 5px; 
-        position: relative;
-        border-radius: 5px; 
-        left: 14px;  */
-        
-      } 
-      h1{
-        position: relative;
-        left: 80px;
-        bottom: 55px;
-      }
-      p{
-        position: relative;
-        left: 70px;
-        bottom: 70px;
-        color: rgb(52, 38, 38);
-      }
-       #A{
-        position: relative;
-        left: 25px;
-        bottom: 65px;
-        border: 0.5px dashed lightgray;
-        text-align: center;
-        width: 190;
-      }
-      #B{
-        position: relative;
-        background-color: black;
-        color: white;
-        bottom: 50px;
-        left: 70px;
-        width: 100;
-         
-        border-radius: 21px;
-        text-align: center;
-      }
-      #C{
-        color: white;
-        background-color: green;
-        border: 1px solid;
-        width: 65px;
-        /* height: 20px; */
-        position: relative;
-        bottom: 425px;
-        left: 170px;
-        border-radius: 21px;
-        text-align: center;
-      }
-       #main:hover{
-           transform: scale(1.2);
-           }
+}
+.profile{
+  height: 400px;
+  width: 300px;
+  border: 2px solid black;
+  /* display: flex;
+  justify-content: center; */
+  padding: 15px;
+  
+}
 
+ 
 
-    </style>
+h3{
+  height: 100px;
+  width: 100px;
+  color: white;
+}
+#b1{
+  background-color: green;
+  color: white;
+  border-radius: 22px;
+  position: relative;
+  left: 230px;
+}
+.pp{
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  background-color: black;
+  position: relative;
+  left: 70px;
+}
+#p_name{
+  color: black;
+  position: relative;
+  left: 115px;
+}
+#p_bio{
+  position: relative;
+  left: 100px;
+  bottom: 10px;
+}
+#p_describe{
+  border: 1px dashed black;
+  height: 40px;
+  width: 180px;
+  text-align: center;
+  position: relative;
+  left: 65px;
+
+}
+#b2{
+  background-color: black;
+  color: white;
+  border-radius: 22px;
+  position: relative;
+  left: 105px;
+  top: 10px;
+  
+}
+  </style>
 </head>
 <body>
-    <div>
-    <div id="profile">
-        <div id="logo">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfDZl7Eb2Bm6b9baP4YudbUAPLBa3B6pjQog&s">
-       
-        </div>
-         <h1>Rahul</h1>
-        <p>Web Developer</p>
-        <h5 id="A">Builds modern websites using HTML & CSS.</h5>
-       <h5 id="B"> View Profile</h5>
-       <h5 id="C">ONLINE</h5>
+  <div id="parent">
+    <div class="profile" id="p1">
+      <button id="b1">ONLINE</button> 
+      <div class="pp"><h3>R</h3></div>
+      <h2 id="p_name">Rahul</h2>
+      <p id="p_bio">Web Developer</p>
+      <h5 id="p_describe">Builds modern websites using <br>HTML & CSS</h5>
+      <button id="b2">View Profile</button>
     </div>
 
-    <div id="profile">
-        <div id="n_logo">
-            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvZUaAPiGLt9wKHtIbOC30eBZwIkWWN4UYsA&s"> -->
-          </div>
-         <h1>Neha</h1>
-        <p style="left: 75px;">UI Designer</p>
-        <h5 id="A">Designs clean and user-friendly interfaces.</h5>
-       <h5 id="B"> View Profile</h5>
-       <h5 id="C" style="background-color: red;">OFFLINE</h5>
+    <div class="profile"id="p2">
+      <div class="pp"> </div>
     </div>
 
-    <div id="third_profile">
-        <div id="logo">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfDZl7Eb2Bm6b9baP4YudbUAPLBa3B6pjQog&s">
-       
-        </div>
-         <h1>Aman</h1>
-        <p>Backend Developer</p>
-        <h5 id="A">Works with server logic and databases.</h5>
-       <h5 id="B"> View Profile</h5>
-       <h5 id="C">ONLINE</h5>
+    <div class="profile" id="p3">
+      <div class="pp"></div>
     </div>
-    </div>
+  </div>
+  
 </body>
 </html>
