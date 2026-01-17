@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            width: 2000px;
+        } */
+        /* main{
+             height: 1000px;
+
+        } */
+        .navbar{
+            background-color: #C05FBF;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+             margin: 0px auto
+        }
+        .navbar_1button{
+            position: relative;
+            left: 30px;
+        }
+        .navbar_2button{
+            width: 380px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .intro{
+            height: 200px;
+            width: 95%;
+            background-color: #C05FBF;
+            color: white;
+            border-radius: 22px;
+            margin: 20px auto;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .history{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .history_boxes{
+            height: 175px;
+            width: 300px;
+            background-color: white;
+            border-radius: 22px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #content_head{
+            color: black;
+            display: flex;
+            justify-content: space-between;
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 10px auto;
+
+        }
+        .content_boxes{
+            border: 2px solid black;
+            height: 210px;
+            width: 450px;
+            border-radius: 22px;
+            padding: 10px;
+        }
+        #content_box_nav{
+            background-color: #C05FBF;
+             height: 20px;
+             width: 100%; 
+            
+        }
+        #content_box_name{
+            width: 100%;
+            display: flex;
+            
+        }
+        /* #content_box_name1{
+            display: flex;
+            flex-direction: column;
+        } */
+        #content_box_notification{
+            display: flex;
+            justify-content: space-between;
+        }
+        #content_box_button{
+            height: 30px;
+            width: 90%;
+            background-color: #C05FBF;
+            border-radius: 22px;
+            position: relative;
+            left: 23px; 
+        }
+        .rating{
+            background-color: orangered;
+            color: white;
+            height: 150px;
+            width: 100%;
+            border-radius: 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+        .contact{
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .remarks{
+            width: 100%;
+            color: wheat;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <header class="navbar">
+        <div>
+            <button class="navbar_1button">Kidlearn</button>
+        </div>
+        <div class="navbar_2button">
+            <button>Home</button>
+            <button>Assignment</button>
+            <button>Profile</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="intro">
+           <h5>Welcome back!</h5>
+           <h2>Hey Champ! Ready to Learn?</h2>
+           <p>You have 3 new assignments for you.Lets make today awesome!</p>
+        </div>
+
+        <div class="history">
+            <div class="history_boxes" id="history_box1">
+                <span>sticker</span>
+                <h2>6</h2>
+                <p>Total</p>
+            </div>
+            <div class="history_boxes" id="history_box2">
+             <span>sticker</span>
+            <h2>1</h2>
+            <p>Completed</p>
+        </div>
+        <div class="history_boxes" id="history_box3">
+            <span>sticker</span>
+            <h2>2</h2>
+            <p>In Progress</p>
+        </div>
+        <div class="history_boxes" id="history_box4">
+            <span>sticker</span>
+            <h2>150</h2>
+            <p>Points</p>
+        </div>
+      </div>
+
+        <div id="content_head">
+            <h2>My Assignments</h2>
+            <p>Keep going!</p>
+        </div>
+
+        <div class="content">
+            <div class="content_boxes">
+                <div id="content_box_nav"></div>
+                <div id="content_box_name">
+                 <div> Sticker </div>
+                <div id="content_box_name1">
+                    <h4>Math Practice</h4>
+                    <p>Mathematics</p>
+                </div>
+            </div>
+            <div id="content_box_notification">
+                <p>New!</p>
+                <p>Tommorow</p>
+            </div>
+            <button id="content_box_button">Start Now!</button>
+        </div>
+        <div class="content_boxes"></div>
+        <div class="content_boxes"></div>
+        <div class="content_boxes"></div>
+        <div class="content_boxes"></div>
+        <div class="content_boxes"></div>
+      </div>
+    
+
+        <div class="rating">
+          <div>sticker</div>
+          <div><h3>You're doing amazing! </h3></div>
+          <div><p>Complete 2 more assignments to unlock a special badge!</p></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <div class="remarks">
+                <p>Keep Learning Keep Growing!</p>
+                <div>
+                    <button>Home</button>
+                    <button>Help</button>
+                    <button>Remarks</button>
+                </div>
+                <p>Made with for kids 2026</p>
+            </div>
+            <div>sticker</div>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
