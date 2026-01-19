@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            height: 500px;
+            width: 300px;
+            margin: 10px auto;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            position: relative;
+            transition: 3s;
+            transform-style: preserve-3d;
+        }
+        #main:hover{
+            transform: rotateY(180deg);
+        }
+        #child1{
+            height: 50%;
+            width: 100%;
+            background-color: aqua;
+            position: absolute;
+            z-index: 2;
+            backface-visibility: hidden;
+        }
+        #child2{
+            height: 50%;
+            width: 100%;
+            background-color: blueviolet;
+            transform: rotateY(180deg);
+            
+            /* z-index: 3; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="child1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi voluptas vitae, eveniet consequuntur sit atque minus possimus sunt sapiente quas.</div>
+        <div id="child2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas repellendus pariatur tempora? Facilis, laborum! Ratione tempore quod nesciunt ipsum?</div>
+    </div>
+</body>
+</html>
