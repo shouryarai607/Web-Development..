@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project_site</title>
     <style>
-        /* body{
-            width: 2000px;
-        } */
-        /* main{
-             height: 1000px;
-
-        } */
+        body{
+            background-color: #fffbf0;
+        } 
+        main{
+           width: 100%;
+           margin: 10px auto;
+        } 
         .navbar{
             background-color: #C05FBF;
             height: 65px;
@@ -23,6 +23,7 @@
             position: fixed;
             left: 0;
             top: 0;
+            box-shadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;;
         }
         .navbar_1button{
             position: relative;
@@ -32,17 +33,34 @@
             width: 380px;
             display: flex;
             justify-content: space-evenly;
+            /* cursor: pointer; */
+        }
+        #nav_button{
+            background: none;
+            color: white;
+            height: 35px;
+            border-radius: 22px;
+            border: 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #nav_button:hover{
+            background: #c084fc;
+            box-shadow: 
+            0 0 10px rgba(192,132,252,0.8),0 0 25px rgba(192,132,252,0.6);
+            transform: translateY(-2px);
         }
         .intro{
-            height: 200px;
+            height: 180px;
             width: 95%;
             background-color: #C05FBF;
             color: white;
             border-radius: 22px;
-            margin: 20px auto;
+            margin: 90px auto;
             padding: 30px;
             display: flex;
             flex-direction: column;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         }
         .history{
             display: flex;
@@ -50,16 +68,21 @@
         }
         .history_boxes{
             height: 175px;
-            width: 300px;
+            width: 360px;
             background-color: white;
             border-radius: 22px;
-            border: 2px solid black;
+            border: 2px solid lightgrey;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            transition: all 3s ease;
         }
+        .history_boxes:hover{
+            transform: translateY(-2px);
+        }
+
         #content_head{
             color: black;
             display: flex;
@@ -69,20 +92,24 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
-            margin: 10px auto;
+            /* margin: 10px auto; */
 
         }
         .content_boxes{
-            border: 2px solid black;
-            height: 210px;
-            width: 450px;
+            margin-top: 10px;
+            background-color: white;
+            /* border: 2px solid black; */
+            height: 180px;
+            width: 470px;
             border-radius: 22px;
             padding: 10px;
+           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+           
         }
         #content_box_nav{
             background-color: #C05FBF;
-             height: 20px;
-             width: 100%; 
+            height: 20px;
+            width: 100%; 
             
         }
         #content_box_name{
@@ -98,24 +125,48 @@
             display: flex;
             justify-content: space-between;
         }
+        #content_box_notify{
+           height: 20px;
+           width: 80px;
+           background-color: #C05FBF;
+           border-radius: 22px;
+           text-align: center;
+           color: white;
+           
+        }
+        #p_notify{
+            position: relative;
+            bottom: 13px;
+        }
         #content_box_button{
             height: 30px;
             width: 90%;
+            color: white;
             background-color: #C05FBF;
             border-radius: 22px;
+            border: 0;
+            
             position: relative;
-            left: 23px; 
+            left: 23px;
+            bottom: 20px;
+            cursor: pointer;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
         }
         .rating{
             background-color: orangered;
             color: white;
-            height: 150px;
-            width: 100%;
+            height: 120px;
+            width: 95%;
             border-radius: 22px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin: 10px auto;
             padding: 30px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+        #rating_emoji{
+            font-size: 25px;
         }
         .contact{
             background-color: aqua;
@@ -123,13 +174,26 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            /* margin: 0%; */
+            /* margin:0 auto;  */
         }
         .remarks{
             width: 100%;
             color: wheat;
             display: flex;
             justify-content: space-evenly;
+        }
+        #footer_button{
+            background: local;
+            border: 0;
+            color: white;
+            cursor: pointer;
+            margin: 20px;
+        }
+        #emoji{
+            font-size: 40px
+        }
+        #footer_button_font{
+            font-size: 25px;
         }
         
 
@@ -138,13 +202,13 @@
 <body>
 <div class="main">
     <header class="navbar">
-        <div>
-            <button class="navbar_1button">Kidlearn</button>
+        <div class="navbar_1button" >
+            <button id="nav_button" style="width: 110px;">Kidlearn</button>
         </div>
         <div class="navbar_2button">
-            <button>Home</button>
-            <button>Assignment</button>
-            <button>Profile</button>
+            <button id="nav_button" style="background-color: white; color: #C05FBF; width: 75px;">Home</button>
+            <button id="nav_button" style="width: 110px;">Assignment</button>
+            <button id="nav_button" style="width: 90px;">Profile</button>
         </div>
     </header>
 
@@ -152,27 +216,27 @@
         <div class="intro">
            <h5>Welcome back!</h5>
            <h2>Hey Champ! Ready to Learn?</h2>
-           <p>You have 3 new assignments for you.Lets make today awesome!</p>
+           <p>You have 3 new assignments for you.Lets make today<br>awesome!</p>
         </div>
 
         <div class="history">
             <div class="history_boxes" id="history_box1">
-                <span>sticker</span>
+                <span id="emoji">📋</span>
                 <h2>6</h2>
                 <p>Total</p>
             </div>
             <div class="history_boxes" id="history_box2">
-             <span>sticker</span>
+             <span id="emoji">✅</span>
             <h2>1</h2>
             <p>Completed</p>
         </div>
         <div class="history_boxes" id="history_box3">
-            <span>sticker</span>
+            <span id="emoji">🚀</span>
             <h2>2</h2>
             <p>In Progress</p>
         </div>
         <div class="history_boxes" id="history_box4">
-            <span>sticker</span>
+            <span id="emoji">⭐</span>
             <h2>150</h2>
             <p>Points</p>
         </div>
@@ -187,31 +251,101 @@
             <div class="content_boxes">
                 <div id="content_box_nav"></div>
                 <div id="content_box_name">
-                 <div> Sticker </div>
+                 <div><span id="emoji">🔢</span> </div>
                 <div id="content_box_name1">
                     <h4>Math Practice</h4>
                     <p>Mathematics</p>
                 </div>
             </div>
             <div id="content_box_notification">
-                <p>New!</p>
+                <span id="content_box_notify"> <p id="p_notify">New!</p></span>
                 <p>Tommorow</p>
             </div>
-            <button id="content_box_button">Start Now!</button>
+            <button id="content_box_button">Start Now!🚀</button>
         </div>
-        <div class="content_boxes"></div>
-        <div class="content_boxes"></div>
-        <div class="content_boxes"></div>
-        <div class="content_boxes"></div>
-        <div class="content_boxes"></div>
+        <div class="content_boxes">
+            <div id="content_box_nav" style="background-color: orangered;"></div>
+                <div id="content_box_name">
+                 <div><span id="emoji"> 📝</span> </div>
+                <div id="content_box_name1">
+                    <h4>Story Writing</h4>
+                    <p>English</p>
+                </div>
+            </div>
+            <div id="content_box_notification">
+               <span id="content_box_notify"> <p id="p_notify">Working</p></span>
+                <p>In 3 days</p>
+            </div>
+            <button id="content_box_button" style="background-color: orangered;">Start Now!🚀</button>
+        </div>
+        <div class="content_boxes">
+            <div id="content_box_nav" style="background-color: lightseagreen;"></div>
+                <div id="content_box_name">
+                 <div> <span id="emoji">🔬</span> </div>
+                <div id="content_box_name1">
+                    <h4>Science Project</h4>
+                    <p>Science</p>
+                </div>
+            </div>
+            <div id="content_box_notification">
+                <span id="content_box_notify"><p id="p_notify">New!</p></span>
+                <p>Next Weak</p>
+            </div>
+            <button id="content_box_button" style="background-color: lightseagreen;">Start Now!🚀</button>
+        </div>
+        <div class="content_boxes">
+            <div id="content_box_nav" style="background-color: green;"></div>
+                <div id="content_box_name">
+                 <div> <span id="emoji">🎨</span> </div>
+                <div id="content_box_name1">
+                    <h4>Drawing Activity</h4>
+                    <p>Art</p>
+                </div>
+            </div>
+            <div id="content_box_notification">
+                <span id="content_box_notify"><p id="p_notify">Done!</p></span>
+                <p>Completed</p>
+            </div>
+            <button id="content_box_button" style="background-color: green;">Start Now!🚀</button>
+        </div>
+        <div class="content_boxes">
+            <div id="content_box_nav"></div>
+                <div id="content_box_name">
+                 <div><span id="emoji">📚</span></div>
+                <div id="content_box_name1">
+                    <h4>Hindi Poem</h4>
+                    <p>Hindi</p>
+                </div>
+            </div>
+            <div id="content_box_notification">
+                <span id="content_box_notify"><p id="p_notify">Working!</p></span>
+                <p>In 2 days</p>
+            </div>
+            <button id="content_box_button">Start Now!🚀</button>
+        </div>
+        <div class="content_boxes">
+            <div id="content_box_nav" style="background-color: orangered;"></div>
+                <div id="content_box_name">
+                 <div> <span id="emoji">🎯</span> </div>
+                <div id="content_box_name1">
+                    <h4>Number Games</h4>
+                    <p>Mathematics</p>
+                </div>
+            </div>
+            <div id="content_box_notification">
+                 <span id="content_box_notify"><p id="p_notify">New!</p></span>
+                <p>🕐Today</p>
+            </div>
+            <button id="content_box_button" style="background-color: orangered;">Start Now!🚀</button>
+        </div>
       </div>
-    
 
         <div class="rating">
           <div>sticker</div>
-          <div><h3>You're doing amazing! </h3></div>
+          <div><h3>You're doing amazing! <span id="rating_emoji">🎉</span> </h3></div>
           <div><p>Complete 2 more assignments to unlock a special badge!</p></div>
         </div>
+
     </main>
 
     <footer>
@@ -219,13 +353,19 @@
             <div class="remarks">
                 <p>Keep Learning Keep Growing!</p>
                 <div>
-                    <button>Home</button>
-                    <button>Help</button>
-                    <button>Remarks</button>
+                    <button id="footer_button">Home</button>
+                    <button id="footer_button">Help</button>
+                    <button id="footer_button">Remarks</button>
                 </div>
                 <p>Made with for kids 2026</p>
             </div>
-            <div>sticker</div>
+            <div>
+                <button id="footer_button"> <span id="footer_button_font">🌟</span></button>
+                <button id="footer_button"> <span id="footer_button_font">🎨</span></button>
+                <button id="footer_button"> <span id="footer_button_font">📚</span></button>
+                <button id="footer_button"> <span id="footer_button_font">🎯</span></button>
+                <button id="footer_button"> <span id="footer_button_font">🏆</span></button>
+            </div>
         </div>
     </footer>
 
