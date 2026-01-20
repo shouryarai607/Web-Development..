@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #background{
+          height:100vh;
+          width: 100vw;
+          background: linear-gradient( skyblue,white );
+          
+        }
+        #footer{
+            height: 70px;
+            width:100vw;
+            background-color: green;
+
+        }
+        #heading{
+            color: red;
+             position: relative;
+            left: 30%; 
+            /* margin: 10px auto; */
+        }
+        #sun{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background: linear-gradient(red,yellow);
+            position: relative;
+            left: 60%;
+            transition: 3s;
+            transform: rotate(360deg);
+            /* animation-name: sun;
+            animation-duration: 3s;
+            animation-iteration-count: infinite; */
+        }
+        @keyframes sun{
+            0%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        #balloon_box{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+        #balloon{
+            height: 150px;
+            width: 100px;
+            background-color: blue;
+            border-radius: 100%;
+            /* position: relative;
+            top: 100%; */
+            animation-name: balloon;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes balloon{
+            0%{
+                transform: translateY(9px);
+            }
+            100%{
+                transform: translateY(-100vh);
+            }
+            
+            
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div id="background">
+        <div id="heading"><h2>🎉WELCOME TO BALLOON FESTIVAL🎈</h2>
+        <div id="sun"></div>
+    </div>
+        <div id="balloon_box">
+            <div id="balloon" style="background-color: yellow;"></div>
+            <div id="balloon" style="background-color: green;"></div>
+            <div id="balloon" style="background-color: red;"></div>
+            <div id="balloon"></div>
+            <div id="balloon" style="background-color: purple;"></div>
+
+        </div>
+
+
+    </div>
+    <footer><div id="footer"></div></footer>
+</body>
+</html>
