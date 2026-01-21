@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 100vh;
+            width: 100vw;
+            gap: 10px; 
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows: 200px 200px 200px 200px 200px;
+
+        }
+        .child{
+            background-color: hotpink;
+            /* margin: 10px auto; */
+            border: 1px solid;
+        }
+        #five{
+           grid-row: span 2;
+        }
+         #seven{
+           grid-row: span 2;
+        }
+        #two{
+            background-size: cover;
+            transition: transform 0.4s ease;
+        }
+        .child:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+      <div class="child" id="one"><img src="https://images.unsplash.com/photo-1761839258575-038fef381ee7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"></div>
+        <div class="child" id="two"><img src="https://plus.unsplash.com/premium_photo-1764598889620-d6b8667f3c77?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8"></div>
+        <div class="child" id="three"><img src="https://images.unsplash.com/photo-1768405942773-87e8d4fb782b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"></div>
+        <div class="child" id="four"></div><img src="https://plus.unsplash.com/premium_photo-1766012368210-14b362ad9805?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"></div>
+        <div class="child" id="five"><img src=""></div>
+        <div class="child" id="six"><img src=""></div>
+        <div class="child" id="seven"><img src=""></div>
+        <div class="child" id="eight"><img src=""></div>
+        <div class="child" id="nine"><img src=""></div>
+        <div class="child" id="ten"><img src=""></div>
+        <div class="child" id="eleven"><img src=""></div>
+        <div class="child" id="tweleve"><img src=""></div> 
+    </div>
+    
+</body>
+</html>
