@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #background{
+            height: 100vh;
+            width: 100vw;
+            background:linear-gradient(blue, purple);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #main{
+            height: 550px;
+            width: 350px;
+            background-color: white;
+            border-radius: 21px;
+            margin: 30px auto;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+            #head{
+                color: blue;
+                position: relative;
+                top: 15px;
+
+
+            }
+            #side{
+                position: relative;
+                bottom: 10px;
+
+            }
+            #time{
+                width: 90%;
+                position: relative;
+                bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+            }
+             /* .score{
+                display: flex;
+                justify-content: space-between;
+            } */
+            #game{
+                height: 275px;
+                width: 280px;
+                display: grid;
+                gap: 4px;
+                grid-template-columns: 100px 100px 100px;
+                grid-template-rows: 100px 100px 100px;
+            }
+            .one{
+                height: 80px;
+                width: 80px;
+                background-color: gray;
+                border-radius: 21px;
+             }
+            #button{
+                background-color: blue;
+                color: white;
+                height: 28px;
+                width: 115px;
+                border: 0px;
+                border-radius: 22px;
+                position: relative;
+                top: 30px;
+            }
+    </style>
+</head>
+<body>
+    <div id="background">
+        <div id="main">
+            <div id="head"><h1>Whack-a-Box</h1></div>
+            <div id="side"><p>Click the heighlighted box!</p></div>
+            <div id="time">
+                <span class="Score"><h5>Score:0</h5></span>
+                <span class="score"><h5>Time:30s</h5></span>
+            </div>
+            <div id="game">
+                <div id="one" class="one"></div>
+                <div id="two" class="one"></div>
+                <div id="three" class="one"></div>
+                <div id="four" class="one"></div>
+                <div id="five" class="one"></div>
+                <div id="six" class="one"></div>
+                <div id="seven" class="one"></div>
+                <div id="eight" class="one"></div>
+                <div id="nine" class="one"></div>
+            </div>
+            <button id="button">Start Game</button>
+        </div>
+    </div>
+</body>
+</html>
