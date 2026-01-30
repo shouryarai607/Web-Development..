@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            height: 80px;
+            width: 100vw;
+            background:linear-gradient(blue, purple);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        a{
+            color: white;
+            cursor: pointer;
+        }
+        a:hover{
+
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        button{
+            border-radius: 22px;
+            width: 55px;
+            height: 25px;
+            border: 0px;
+            cursor: pointer;
+
+        }
+        #child_parent{
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+        @media screen (max-width: 480px){
+            nav{
+                display:flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a>HOME</a>
+        </div>
+        <div id="child_parent">
+            <a>About us</a>
+            <a>Contact us</a>
+            <a>Help</a>
+        </div>
+        <div>
+            <button>Login</button>
+        </div>
+    </nav>
+</body>
+</html>
